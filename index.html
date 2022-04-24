@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Que hay LP</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="Css/estilo.css">
     </head>
     <body>
@@ -20,13 +21,13 @@
                     </ul>
                 </nav>
             </header>    
-            <section class= "titulo">
+            <section data-aos="zoom-in" class= "titulo">
                 <h2>Eventos en la ciudad de La Plata</h2>
                 <p>Encontrá los mejores planes para hacer en La Plata. Todos los conciertos, exposiciones, eventos profesionales y teatro para disfrutar en la ciudad.</p>
             </section>
             <section class= "losDestacados">
                 <h3>Los destacados</h3> 
-                <div class= "contenedor">
+                <div data-aos="fade-down" class= "contenedor">
                     <article class="cards">
                         <img src = "Images/pasaje.png" alt="Pasaje">
                         <h4>CENTRO CULTURAL PASAJE DARDO ROCHA, TEATRO</h4>
@@ -63,5 +64,9 @@
                 </section>
             </footer>
         </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
