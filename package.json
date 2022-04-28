@@ -1,0 +1,25 @@
+{
+  "name": "quehaylp",
+  "version": "1.0.0",
+  "description": "Pruebe mi sitio en el siguiente [link]( https://carmen-di.github.io/QueHayLp/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/pruebacss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carmen-di/QueHayLp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carmen-di/QueHayLp/issues"
+  },
+  "homepage": "https://github.com/carmen-di/QueHayLp#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

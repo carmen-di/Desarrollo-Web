@@ -5,57 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos-Hoy</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/estilo.css">
 </head>
 <body>
-    <div id = "gridContenedor">
-        <header class= "encabezado">
-            <h1>¿Qué hay hoy La Plata?</h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="hoy.html">Hoy</a></li>
-                    <li><a href="estasemana.html">Esta semana</a></li>
-                    <li><a href="estemes.html">Este mes</a></li>
-                </ul>
-            </nav>
-        </header>    
-        <h1 data-aos="zoom-in" class= "tituloPagina">Hoy</h1>
-        <article class= "eventos">
-            <h2>Meridiano V</h2> 
-            <div class= "eventosDes0">
-                <img src="../Images/meridianov.jpg" alt="Meridiano V">
-                <p>La Secretaría de Cultura y Educación, junto a la Dirección de Meridiano V, invitan a los vecinos, locales y visitantes, a disfrutar de una tarde llena de sorpresas. La esquina de 17 y 71 se transforma en el escenario donde el humor se convierte en el protagonista de la tarde de la mano de dos experimentados payasos argentinos con experiencia internacional. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nesciunt assumenda eveniet tempore sint tenetur!</p>
-            </div>
-            <h2>Cine Municipal Select</h2>
-            <div class= "eventosDes">
-                <img src="../Images/cine_select.jpg" alt="Cine select"> 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, veniam non quibusdam, maxime alias omnis sequi ipsum cumque qui eos beatae minima? Eius beatae placeat cumque temporibus quidem dolorem eveniet!</p>
-            </div>
-        </article>
-        <footer class= "piePagina">
-            <div class="asistencia">
-                <h5>ASISTENCIA</h5>
-                <ul>
-                    <li>Nosotros</li>
-                    <li>Preguntas frecuentes</li>
-                </ul>
-            </div>
-            <div class="redes">
-                <h5>SEGUINOS</h5>
+    <header class= "encabezado">
+    <nav class="navbar navbar-expand-lg colornav">
+        <div class="container">
+        <a class="navbar-brand nombre" href="#">¿Qué hay hoy La Plata?</a>
+            <ul class="navbar-nav mb-2 mb-lg-0 secciones" >
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hoy.html">Hoy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="estasemana.html">Esta semana</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="estemes.html">Este mes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>       
+    <h1 data-aos="zoom-in" class= "tituloPagina">Hoy</h1>
+    <article class= "eventos">
+        <h2>Meridiano V</h2> 
+        <div class= "eventosDes0">
+            <img src="../Images/meridianov.jpg" alt="Meridiano V">
+            <p>La Secretaría de Cultura y Educación, junto a la Dirección de Meridiano V, invitan a los vecinos, locales y visitantes, a disfrutar de una tarde llena de sorpresas. La esquina de 17 y 71 se transforma en el escenario donde el humor se convierte en el protagonista de la tarde de la mano de dos experimentados payasos argentinos con experiencia internacional. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nesciunt assumenda eveniet tempore sint tenetur!</p>
+        </div>
+        <h2>Cine Municipal Select</h2>
+        <div class= "eventosDes">
+            <img src="../Images/cine_select.jpg" alt="Cine select"> 
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, veniam non quibusdam, maxime alias omnis sequi ipsum cumque qui eos beatae minima? Eius beatae placeat cumque temporibus quidem dolorem eveniet!</p>
+        </div>
+    </article>
+    <footer class= "piePagina">
+        <div class="asistencia">
+            <h5>ASISTENCIA</h5>
+            <ul>
+                <li>Nosotros</li>
+                <li>Preguntas frecuentes</li>
+            </ul>
+        </div>
+        <div class="redes">
+            <h5>SEGUINOS</h5>
                 <a href="https://www.instagram.com" target="_blank"><img src= "../Images/instagram.png"></a>
                 <a href="https://www.facebook.com" target="_blank"><img src= "../Images/facebook.png"></a>
                 <a href="https://www.twitter.com" target="_blank"><img src= "../Images/twitter.png"></a>
-            </div>
-            <section>
-                <a href="contacto.html">Contacto</a> 
-            </section>
-        </footer>
-    </div>
+        </div>
+        <section>
+            <a href="contacto.html">Contacto</a> 
+        </section>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
