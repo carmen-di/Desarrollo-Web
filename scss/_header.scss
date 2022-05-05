@@ -1,0 +1,53 @@
+$colorfontnav: white;
+
+header .contenerdor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.nombre{
+    text-align: justify;
+    color: #f0f4fa;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: -25px;
+}
+
+a:hover{
+    color: white;
+}
+
+.colornav {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    background-color: #fa7f9e; 
+    padding: 0%; 
+}
+
+.encabezado nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+    flex-wrap: wrap;
+
+    li a {
+        color: $colorfontnav;
+        display: block;
+        padding: 10px 50px; 
+        text-decoration: none;
+        font-weight: bold;
+        font-size: large;
+        &:hover {
+            background-color: #cf6983;
+            color: $colorfontnav;
+        }
+    }
+
+}
