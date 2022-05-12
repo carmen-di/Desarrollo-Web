@@ -1,4 +1,10 @@
-$colorfontnav: white;
+/*--------- HEARDER ---------*/
+$colorfont: (   //mapa de colores
+    tituloPag: #f0f4fa,
+    secciones: white,
+    fondo: #fa7f9e,
+    transicion: #cf6983
+);
 
 header .contenerdor {
     display: flex;
@@ -11,21 +17,21 @@ header .contenerdor {
 
 .nombre{
     text-align: justify;
-    color: #f0f4fa;
+    color: map-get($colorfont, tituloPag);
     font-weight: bold;
     font-size: 25px;
     margin-left: -25px;
 }
 
 a:hover{
-    color: white;
+    color: map-get($colorfont, secciones);
 }
 
 .colornav {
     width: 100%;
     display: flex;
     list-style: none;
-    background-color: #fa7f9e; 
+    background-color: map-get($colorfont, fondo); 
     padding: 0%; 
 }
 
@@ -38,16 +44,15 @@ a:hover{
     flex-wrap: wrap;
 
     li a {
-        color: $colorfontnav;
+        color: map-get($colorfont, secciones);
         display: block;
         padding: 10px 50px; 
         text-decoration: none;
         font-weight: bold;
         font-size: large;
         &:hover {
-            background-color: #cf6983;
-            color: $colorfontnav;
+            background-color:map-get($colorfont, transicion) ;
+            color: map-get($colorfont, secciones);
         }
     }
-
 }

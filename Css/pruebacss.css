@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*--------- HEARDER ---------*/
 header .contenerdor {
   display: flex;
   flex-direction: row;
@@ -95,6 +97,123 @@ a:hover {
   font-size: 18px;
   font-weight: bold; }
 
+/*------- Main de mis otras páginas -------*/
+#gridContenedor {
+  display: grid;
+  grid-template-areas: "header"
+ "tituloPagina"
+ "eventos"
+ "footer";
+  grid-template-rows: auto auto auto auto; }
+
+.tituloPagina {
+  grid-area: tituloPagina;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: 200; }
+
+.eventos {
+  grid-area: eventos;
+  margin-top: 60px;
+  background-color: #fae8bb;
+  margin-bottom: 100px; }
+  .eventos h2 {
+    display: flex;
+    color: #3d3d3d;
+    padding-top: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 25px; }
+
+.eventosDes0, .eventosDes, .eventosDes2 {
+  display: flex;
+  align-items: center; }
+  .eventosDes0 img {
+    padding-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    width: 120%; }
+  .eventosDes0 p, .eventosDes p, .eventosDes2 p {
+    margin: 20px;
+    text-align: justify;
+    font-size: medium; }
+
+.eventosDes img {
+  padding-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  width: 118%; }
+
+.eventosDes iframe {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  width: 40%; }
+
+.eventosDes2 img {
+  padding-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  width: 100%; }
+
+/*--------- Página de contacto ---------*/
+.tituloContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 50px;
+  color: #242021; }
+  .tituloContacto h1 {
+    font-weight: bold; }
+
+.formGrid {
+  grid-area: formulario;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  margin-top: 30px;
+  background-color: #fae8bb;
+  margin-bottom: 100px; }
+
+.formulario form {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 45px;
+  margin: transparent; }
+
+.formulario fieldset {
+  border-color: #fae8bb; }
+
+.formulario label {
+  display: block; }
+
+.formulario textarea {
+  padding-bottom: 20px;
+  display: block; }
+
+.formulario input {
+  margin-top: 2px;
+  margin-bottom: 2px; }
+
+.form-control {
+  width: 80%; }
+
+.boton {
+  background-color: #cf6983;
+  border-color: #cf6983; }
+
+.mapa {
+  margin-top: 100px;
+  text-align: center;
+  align-content: left; }
+
 /*--------- FOOTER ---------*/
 .piePagina {
   background-color: #242021;
@@ -117,29 +236,25 @@ a:hover {
     border-radius: 10px;
     margin-top: 30px; }
 
-.asistencia {
+.asistencia, .redes {
   font-size: 15px;
   color: white; }
-  .asistencia h5 {
+  .asistencia h5, .redes h5 {
     font-weight: bold;
     font-size: 15px; }
-  .asistencia ul {
+  .asistencia ul, .redes ul {
     list-style: none;
     margin-top: 5px;
     margin-left: -30px; }
-    .asistencia ul li a {
+    .asistencia ul li a, .redes ul li a {
       text-decoration: none;
       display: block;
       font-size: small; }
 
-.redes {
-  font-size: 15px;
-  color: white; }
-  .redes h5 {
-    margin-bottom: 5px;
-    font-size: 15px;
-    font-weight: bold; }
-  .redes a img {
-    margin-left: 2px;
-    width: 20px;
-    height: 20px; }
+.redes h5 {
+  margin-bottom: 5px; }
+
+.redes a img {
+  margin-left: 2px;
+  width: 20px;
+  height: 20px; }
