@@ -1,0 +1,276 @@
+/*:::::::: Vista Desktop ::::::::*/
+@media only screen and (min-width: 1024px){
+    #gridIndex {
+        grid-template-areas: 
+            "header"
+            "titulo"
+            "losDestacados"
+            "pie";
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .encabezado {
+        grid-area: header;
+    }
+    .titulo {
+        grid-area: titulo;
+    }
+    .losDestacados {
+        grid-area: losDestacados; 
+    }
+    .piePagina {
+        grid-area: pie;
+    }
+
+    #gridContenedor {
+        grid-template-areas:
+            "header"
+            "titulo"
+            "destacados"
+            "pie"; 
+        grid-template-rows: auto auto auto auto; 
+    } 
+
+    .tituloPagina {
+        grid-area: titulo;
+    }
+
+    .eventos {
+        grid-area: destacados;
+    }
+}
+
+/*:::::::: Vista Mobile ::::::::*/ 
+@media (max-width: 576px) {
+    #gridIndex {
+        grid-template-areas: 
+            "header"
+            "titulo"
+            "losDestacados"
+            "pie";
+        grid-template-rows: auto auto auto auto;
+    }
+
+/*HEARDER */
+    
+.container {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nombre{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 23px; 
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+a:hover{
+    color: white;
+}
+
+.colornav {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    background-color: #fa7f9e; 
+    padding: 0%; 
+}
+
+.encabezado nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    li {
+        text-align: center;
+    }
+    a:hover {
+        background-color: #cf6983;
+        color: white;
+    }  
+}
+
+
+/*MAIN*/
+    .titulo {
+        grid-area: titulo;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        background-color: #fff8e6;
+        text-align: center;
+        height: fit-content;
+        margin-bottom: 10px;
+
+        h2 {
+            margin-top: 40px;
+            font-size: 30px;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        p {
+            padding: 10px;
+            text-align: center; 
+            font-size: 14px;
+            padding-bottom: 30px;
+        } 
+    }
+
+    .losDestacados h3{
+        grid-area: losDestacados;
+        display: flex;
+        flex-direction: column; 
+        font-size: 20px;
+        margin-top: 50px;
+    } 
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        margin: 1rem 1rem;
+        width: 50%;
+    } 
+
+    .carousel {
+        padding-bottom: 50px;
+        margin: 2rem 4rem;
+    }
+
+/*FOOTER*/    
+    .piePagina {
+        grid-area: pie;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+/*------- Main de mis otras páginas --------*/
+    #gridContenedor {
+        grid-template-areas:
+            "header"
+            "titulo"
+            "destacados"
+            "pie"; 
+        grid-template-rows: auto auto auto auto; 
+    } 
+
+    .tituloPagina {
+        grid-area: titulo; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 50px;
+        text-align: center;
+    } 
+
+    .eventos {
+        grid-area: destacados;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* flex-wrap: wrap;   */
+        align-items: center;
+        background-color: #fae8bb;
+        margin-bottom: 50px;
+
+        h2 {
+            color: rgb(61, 61, 61);
+            padding-top: 30px;
+            text-align: center;
+        }
+    } 
+
+    @mixin imagenes($padding-top, $margin-left, $margin-bottom, $widht) {
+        padding-top: 30px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        width: $widht;
+    }
+    
+    .eventosDes0 {
+        img {
+            @include imagenes(-top, -left, -bottom, 80%);
+        }
+       
+        p{
+            margin: 15px;
+            text-align: justify; 
+            font-size: 0%;
+        } 
+    }
+
+    .eventosDes{
+        img {
+            @include imagenes(-top, -left, -bottom, 80%);
+        }
+        p{
+            margin: 15px;
+            text-align: justify; 
+            font-size: 0%;
+        }    
+    }
+    
+    .eventosDes2 {
+        img {
+            @include imagenes(-top, -left, -bottom, 80%);
+        }
+    
+        p{
+            margin: 15px;
+            text-align: justify; 
+            font-size: 0%;
+        } 
+
+        iframe {
+            padding-top: 30px;
+            padding-bottom: 20px;
+            margin-left: 40px;
+            width: 100%;
+        }
+    }
+
+    .eventosDes3 {
+        img {
+            @include imagenes(-top, -left, -bottom, 100%);
+        } 
+        p{
+            margin: 15px;
+            text-align: justify; 
+            font-size: 0%;
+        } 
+    }
+
+/*FORMULARIO*/
+.formGrid {
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    background-color: #fae8bb;
+    margin-bottom: 100px;
+    
+}
+
+.mapa {
+    margin: 30px;
+    text-align: center;
+    align-content: left;
+    overflow: hidden;
+}
+
+
+}

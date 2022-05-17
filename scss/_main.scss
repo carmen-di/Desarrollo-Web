@@ -39,7 +39,7 @@
 
 .card {
     margin: 3rem 2rem; 
-    margin-bottom: 100px;
+    margin-bottom: 5px;
     padding: 10px;
     border: solid 1px white;
     width: 80%;
@@ -62,6 +62,36 @@
     margin-top: 5px;
     font-size: 18px;
     font-weight: bold;
+}
+
+/*------- Descubrí --------*/
+.descubri {
+    h3{
+        display: flex;
+        flex-direction: column;
+        color: rgb(61, 61, 61);
+        margin-left: 30px; 
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+} 
+
+.carousel {
+    padding-bottom: 50px;
+    margin: 4rem 10rem;
+}
+
+.carousel-inner {
+    h5{
+        color:#f0f4fa;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    p{
+        color:#f0f4fa;
+    }
 }
 
 /*------- Main de mis otras páginas -------*/
@@ -135,7 +165,7 @@
         padding-top: 30px;
         padding-bottom: 20px;
         margin-left: 20px;
-        width: 40%;
+        width: 50%;
     }    
 }
 
@@ -147,6 +177,13 @@
     } 
 }
 
+.eventosDes3 {
+    @extend .eventosDes0;
+
+    img {
+        @include imagenes(-top, -left, -bottom, 36%);
+    } 
+}
 /*--------- Página de contacto ---------*/
 .tituloContacto {
     display: flex;
@@ -214,4 +251,27 @@
     margin-top: 100px;
     text-align: center;
     align-content: left;
+}
+
+/*--------- Asistencia ---------*/
+.nosotros {
+    @extend .eventos;
+     p{
+        display: flex;
+        color: rgb(61, 61, 61);
+        margin-left: 20px; 
+        margin-right: 20px; 
+        text-align: justify; 
+        font-size: medium;
+    }
+    ul{
+        list-style: none;
+        color: rgb(61, 61, 61);
+        margin-left: -10px; 
+        li a{
+            text-decoration: none;
+            display: block;
+            font-size: small;
+        }
+    }
 }

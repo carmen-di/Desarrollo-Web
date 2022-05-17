@@ -78,7 +78,7 @@ a:hover {
 
 .card {
   margin: 3rem 2rem;
-  margin-bottom: 100px;
+  margin-bottom: 5px;
   padding: 10px;
   border: solid 1px white;
   width: 80%;
@@ -97,13 +97,32 @@ a:hover {
   font-size: 18px;
   font-weight: bold; }
 
+/*------- Descubrí --------*/
+.descubri h3 {
+  display: flex;
+  flex-direction: column;
+  color: #3d3d3d;
+  margin-left: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px; }
+
+.carousel {
+  padding-bottom: 50px;
+  margin: 4rem 10rem; }
+
+.carousel-inner h5 {
+  color: #f0f4fa;
+  font-size: 40px;
+  font-weight: bold; }
+
+.carousel-inner p {
+  color: #f0f4fa; }
+
 /*------- Main de mis otras páginas -------*/
 #gridContenedor {
   display: grid;
-  grid-template-areas: "header"
- "tituloPagina"
- "eventos"
- "footer";
+  grid-template-areas: "header" "tituloPagina" "eventos" "footer";
   grid-template-rows: auto auto auto auto; }
 
 .tituloPagina {
@@ -116,12 +135,12 @@ a:hover {
   font-size: 40px;
   font-weight: 200; }
 
-.eventos {
+.eventos, .nosotros {
   grid-area: eventos;
   margin-top: 60px;
   background-color: #fae8bb;
   margin-bottom: 100px; }
-  .eventos h2 {
+  .eventos h2, .nosotros h2 {
     display: flex;
     color: #3d3d3d;
     padding-top: 30px;
@@ -129,15 +148,15 @@ a:hover {
     font-weight: bold;
     font-size: 25px; }
 
-.eventosDes0, .eventosDes, .eventosDes2 {
+.eventosDes0, .eventosDes, .eventosDes2, .eventosDes3 {
   display: flex;
   align-items: center; }
-  .eventosDes0 img {
+  .eventosDes0 img, .eventosDes img, .eventosDes2 img, .eventosDes3 img {
     padding-top: 30px;
     margin-left: 20px;
     margin-bottom: 30px;
     width: 120%; }
-  .eventosDes0 p, .eventosDes p, .eventosDes2 p {
+  .eventosDes0 p, .eventosDes p, .eventosDes2 p, .eventosDes3 p {
     margin: 20px;
     text-align: justify;
     font-size: medium; }
@@ -152,13 +171,19 @@ a:hover {
   padding-top: 30px;
   padding-bottom: 20px;
   margin-left: 20px;
-  width: 40%; }
+  width: 50%; }
 
 .eventosDes2 img {
   padding-top: 30px;
   margin-left: 20px;
   margin-bottom: 30px;
   width: 100%; }
+
+.eventosDes3 img {
+  padding-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  width: 36%; }
 
 /*--------- Página de contacto ---------*/
 .tituloContacto {
@@ -214,6 +239,24 @@ a:hover {
   text-align: center;
   align-content: left; }
 
+/*--------- Asistencia ---------*/
+.nosotros p {
+  display: flex;
+  color: #3d3d3d;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+  font-size: medium; }
+
+.nosotros ul {
+  list-style: none;
+  color: #3d3d3d;
+  margin-left: -10px; }
+  .nosotros ul li a {
+    text-decoration: none;
+    display: block;
+    font-size: small; }
+
 /*--------- FOOTER ---------*/
 .piePagina {
   background-color: #242021;
@@ -236,25 +279,211 @@ a:hover {
     border-radius: 10px;
     margin-top: 30px; }
 
-.asistencia, .redes {
+.asistencia {
   font-size: 15px;
   color: white; }
-  .asistencia h5, .redes h5 {
+  .asistencia a {
+    color: white;
+    text-decoration: none;
     font-weight: bold;
     font-size: 15px; }
-  .asistencia ul, .redes ul {
+  .asistencia ul {
     list-style: none;
     margin-top: 5px;
     margin-left: -30px; }
-    .asistencia ul li a, .redes ul li a {
+    .asistencia ul li a {
       text-decoration: none;
       display: block;
       font-size: small; }
 
 .redes h5 {
-  margin-bottom: 5px; }
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: white; }
 
 .redes a img {
   margin-left: 2px;
   width: 20px;
   height: 20px; }
+
+/*:::::::: Vista Desktop ::::::::*/
+@media only screen and (min-width: 1024px) {
+  #gridIndex {
+    grid-template-areas: "header" "titulo" "losDestacados" "pie";
+    grid-template-rows: auto auto auto auto; }
+  .encabezado {
+    grid-area: header; }
+  .titulo {
+    grid-area: titulo; }
+  .losDestacados {
+    grid-area: losDestacados; }
+  .piePagina {
+    grid-area: pie; }
+  #gridContenedor {
+    grid-template-areas: "header" "titulo" "destacados" "pie";
+    grid-template-rows: auto auto auto auto; }
+  .tituloPagina {
+    grid-area: titulo; }
+  .eventos, .nosotros {
+    grid-area: destacados; } }
+
+/*:::::::: Vista Mobile ::::::::*/
+@media (max-width: 576px) {
+  #gridIndex {
+    grid-template-areas: "header" "titulo" "losDestacados" "pie";
+    grid-template-rows: auto auto auto auto; }
+  /*HEARDER */
+  .container {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+  .nombre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 23px;
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  a:hover {
+    color: white; }
+  .colornav {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    background-color: #fa7f9e;
+    padding: 0%; }
+  .encabezado nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; }
+    .encabezado nav ul li {
+      text-align: center; }
+    .encabezado nav ul a:hover {
+      background-color: #cf6983;
+      color: white; }
+  /*MAIN*/
+  .titulo {
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff8e6;
+    text-align: center;
+    height: fit-content;
+    margin-bottom: 10px; }
+    .titulo h2 {
+      margin-top: 40px;
+      font-size: 30px;
+      padding: 10px;
+      text-align: center; }
+    .titulo p {
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      padding-bottom: 30px; }
+  .losDestacados h3 {
+    grid-area: losDestacados;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 50px; }
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .card {
+    margin: 1rem 1rem;
+    width: 50%; }
+  .carousel {
+    padding-bottom: 50px;
+    margin: 2rem 4rem; }
+  /*FOOTER*/
+  .piePagina {
+    grid-area: pie;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  /*------- Main de mis otras páginas --------*/
+  #gridContenedor {
+    grid-template-areas: "header" "titulo" "destacados" "pie";
+    grid-template-rows: auto auto auto auto; }
+  .tituloPagina {
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    text-align: center; }
+  .eventos, .nosotros {
+    grid-area: destacados;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-wrap: wrap;   */
+    align-items: center;
+    background-color: #fae8bb;
+    margin-bottom: 50px; }
+    .eventos h2, .nosotros h2 {
+      color: #3d3d3d;
+      padding-top: 30px;
+      text-align: center; }
+  .eventosDes0 img, .eventosDes img, .eventosDes2 img, .eventosDes3 img {
+    padding-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    width: 80%; }
+  .eventosDes0 p, .eventosDes p, .eventosDes2 p, .eventosDes3 p {
+    margin: 15px;
+    text-align: justify;
+    font-size: 0%; }
+  .eventosDes img {
+    padding-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    width: 80%; }
+  .eventosDes p {
+    margin: 15px;
+    text-align: justify;
+    font-size: 0%; }
+  .eventosDes2 img {
+    padding-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    width: 80%; }
+  .eventosDes2 p {
+    margin: 15px;
+    text-align: justify;
+    font-size: 0%; }
+  .eventosDes2 iframe {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    width: 100%; }
+  .eventosDes3 img {
+    padding-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    width: 100%; }
+  .eventosDes3 p {
+    margin: 15px;
+    text-align: justify;
+    font-size: 0%; }
+  /*FORMULARIO*/
+  .formGrid {
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    background-color: #fae8bb;
+    margin-bottom: 100px; }
+  .mapa {
+    margin: 30px;
+    text-align: center;
+    align-content: left;
+    overflow: hidden; } }
