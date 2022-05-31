@@ -17,8 +17,6 @@
     }
     .losDestacados {
         grid-area: losDestacados; 
-        // margin: auto 0;
-        // width: 70%;
     }
     .piePagina {
         grid-area: pie;
@@ -145,14 +143,16 @@ a:hover{
         } 
     }
 
-    .losDestacados h3{
+    .losDestacados{
         grid-area: losDestacados;
         display: flex;
         flex-direction: column; 
-        font-size: 20px;
-        margin-top: 50px;
-    } 
-
+        h3{
+            font-size: 20px;
+            margin-top: 50px;
+        } 
+    }
+     
     .contenedor {
         display: flex;
         flex-direction: column;
@@ -166,8 +166,7 @@ a:hover{
         align-items: center;
         overflow: hidden;
         margin: 1rem 1rem;
-        width: 50%;
-
+        width: 40%;
     } 
 
     .carousel {
