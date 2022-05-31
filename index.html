@@ -14,11 +14,15 @@
         <link rel="stylesheet" href="Css/pruebacss.css">
     </head>
     <body>
-            <header class= "encabezado">
-            <nav class="navbar navbar-expand-lg colornav">
-                <div class="container">
+        <header class= "encabezado" >
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
                 <a class="navbar-brand nombre" href="#">¿Qué hay hoy La Plata?</a>
-                <ul class="navbar-nav mb-2 mb-lg-0 secciones" >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="Images/menu.png" class="menu" alt="menu">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0" >
                         <li class="nav-item">
                             <a class="nav-link" href="./index.html">Inicio</a>
                         </li>
@@ -33,118 +37,119 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-            </header>   
-            <section data-aos="zoom-in" class= "titulo">
-                <h2>Eventos en la ciudad de La Plata</h2>
-                <p>Encontrá los mejores planes para hacer en La Plata. Todos los conciertos, exposiciones, eventos profesionales y teatro para disfrutar en la ciudad.</p>
-            </section>
-            <section class= "losDestacados">
-                <h3>Los destacados</h3> 
-                <div data-aos="fade-down" class= "contenedor">
-                    <div class="card" style="width: 20rem;">
-                        <img src="Images/pasaje.png" class="card-img-top" alt="Pasaje">
-                        <div class="card-body">
-                            <h5 class="card-title">CENTRO CULTURAL PASAJE DARDO ROCHA, TEATRO</h5>
-                            <p class="card-text">Con la puesta en escena de “Frida”.</p>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 20rem;">
-                        <img src="Images/republica.jpeg" class="card-img-top" alt="Republica">
-                        <div class="card-body">
-                            <h5 class="card-title">REPÚBLICA DE LOS NIÑOS, TEATRO</h5>
-                            <p class="card-text">Tarde de danza en la “Repu”.</p>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 20rem;">
-                        <img src="Images/ccmalvinas.jpeg" class="card-img-top" alt="Malvinas">
-                        <div class="card-body">
-                            <h5 class="card-title">CENTRO CULTURAL ISLAS MALVINAS, MÚSICA Y CONCIERTOS</h5>
-                            <p class="card-text">Lo profundo de la palabra y la armonía de la música.</p>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 20rem;">
-                        <img src="Images/dardorocha2.jpeg" class="card-img-top" alt="Pasaje Rocha">
-                        <div class="card-body">
-                            <h5 class="card-title">CENTRO CULTURAL PASAJE DARDO ROCHA, TEATRO</h5>
-                            <p class="card-text">“Varonera” se presenta en el Pasaje Dardo Rocha.</p>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 20rem;">
-                        <img src="Images/historias.jpeg" class="card-img-top" alt="López Merino">
-                        <div class="card-body">
-                            <h5 class="card-title">COMPLEJO BIBLIOTECARIO LÓPEZ MERINO, LITERATURA</h5>
-                            <p class="card-text">“Historias Compartidas”</p>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 20rem;">
-                        <img src="Images/coro.png" class="card-img-top" alt="Meridiano V">
-                        <div class="card-body">
-                            <h5 class="card-title">MERIDIANO V, MÚSICA Y CONCIERTOS</h5>
-                            <p class="card-text">Primer encuentro 2022 del ciclo “Coros en el Andén”</p>
-                        </div>
+            </div>
+        </nav>
+        </header>   
+        <section data-aos="zoom-in" class= "titulo">
+            <h2>Eventos en la ciudad de La Plata</h2>
+            <p>Encontrá los mejores planes para hacer en La Plata. Todos los conciertos, exposiciones, eventos profesionales y teatro para disfrutar en la ciudad.</p>
+        </section>
+        <section class= "losDestacados">
+            <h3>Los destacados</h3> 
+            <div data-aos="fade-down" class= "contenedor">
+                <div class="card" style="width: 20rem;">
+                    <img src="Images/pasaje.png" class="card-img-top" alt="Pasaje">
+                    <div class="card-body">
+                        <h5 class="card-title">CENTRO CULTURAL PASAJE DARDO ROCHA, TEATRO</h5>
+                        <p class="card-text">Con la puesta en escena de “Frida”.</p>
                     </div>
                 </div>
-            </section>
-            <section class= "descubri">
-                <h3>Descubrí la ciudad</h3> 
-                <div id="carouselExampleCaptions" class="carousel" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <div class="card" style="width: 20rem;">
+                    <img src="Images/republica.jpeg" class="card-img-top" alt="Republica">
+                    <div class="card-body">
+                        <h5 class="card-title">REPÚBLICA DE LOS NIÑOS, TEATRO</h5>
+                        <p class="card-text">Tarde de danza en la “Repu”.</p>
                     </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
+                </div>
+                <div class="card" style="width: 20rem;">
+                    <img src="Images/ccmalvinas.jpeg" class="card-img-top" alt="Malvinas">
+                    <div class="card-body">
+                        <h5 class="card-title">CENTRO CULTURAL ISLAS MALVINAS, MÚSICA Y CONCIERTOS</h5>
+                        <p class="card-text">Lo profundo de la palabra y la armonía de la música.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 20rem;">
+                    <img src="Images/dardorocha2.jpeg" class="card-img-top" alt="Pasaje Rocha">
+                    <div class="card-body">
+                        <h5 class="card-title">CENTRO CULTURAL PASAJE DARDO ROCHA, TEATRO</h5>
+                        <p class="card-text">“Varonera” se presenta en el Pasaje Dardo Rocha.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 20rem;">
+                    <img src="Images/historias.jpeg" class="card-img-top" alt="López Merino">
+                    <div class="card-body">
+                        <h5 class="card-title">COMPLEJO BIBLIOTECARIO LÓPEZ MERINO, LITERATURA</h5>
+                        <p class="card-text">“Historias Compartidas”</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 20rem;">
+                    <img src="Images/coro.png" class="card-img-top" alt="Meridiano V">
+                    <div class="card-body">
+                        <h5 class="card-title">MERIDIANO V, MÚSICA Y CONCIERTOS</h5>
+                        <p class="card-text">Primer encuentro 2022 del ciclo “Coros en el Andén”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class= "descubri">
+            <h3>Descubrí la ciudad</h3> 
+            <div id="carouselExampleCaptions" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
                         <img src="Images/almafuerte.jpg" class="d-block w-100" alt="Museo Almafuerte">
                         <div class="carousel-caption d-none d-md-block">
-                          <h5>Museo Almafuerte</h5>
-                          <p>Avenida 66 530, La Plata, Buenos Aires, Argentina.</p>
+                            <h5>Museo Almafuerte</h5>
+                            <p>Avenida 66 530, La Plata, Buenos Aires, Argentina.</p>
                         </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="Images/complejo.jpg" class="d-block w-100" alt="López Merino ">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Complejo bibliotecario López Merino </h5>
-                          <p>Calle 49 835, La Plata, Provincia de Buenos Aires, Argentina</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="Images/pulsar.jpg" class="d-block w-100" alt="Casa Pulsar">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Casa Pulsar</h5>
-                          <p>Calle 58 512, La Plata, Buenos Aires, Argentina.</p>
-                        </div>
-                      </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-            </section>
-            <footer class= "piePagina">
-                <div class="asistencia">
-                    <a href="Pages/asistencia.html">ASISTENCIA</a>
-                    <ul>
-                        <li>Nosotrxs</li>
-                        <li>Espacios</li>
-                    </ul>
+                    <div class="carousel-item">
+                    <img src="Images/merino.jpg" class="d-block w-100" alt="López Merino ">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Complejo bibliotecario López Merino </h5>
+                            <p>Calle 49 835, La Plata, Provincia de Buenos Aires, Argentina</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="Images/pulsar.jpg" class="d-block w-100" alt="Casa Pulsar">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Casa Pulsar</h5>
+                            <p>Calle 58 512, La Plata, Buenos Aires, Argentina.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="redes">
-                    <h5>SEGUINOS</h5>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <footer class= "piePagina">
+            <div class="asistencia">
+                <a href="Pages/asistencia.html">ASISTENCIA</a>
+                <ul>
+                    <li>Nosotrxs</li>
+                    <li>Espacios</li>
+                </ul>
+            </div>
+            <div class="redes">
+                <h5>SEGUINOS</h5>
                     <a href="https://www.instagram.com" target="_blank"><img src= "Images/instagram.png"></a>
                     <a href="https://www.facebook.com" target="_blank"><img src= "Images/facebook.png"></a>
                     <a href="https://www.twitter.com" target="_blank"><img src= "Images/twitter.png"></a>
-                </div>
-                <section>
-                    <a href="Pages/contacto.html">Contacto</a> 
-                </section>
-            </footer>
+            </div>
+            <section>
+                <a href="Pages/contacto.html">Contacto</a> 
+            </section>
+        </footer>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();

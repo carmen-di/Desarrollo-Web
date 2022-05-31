@@ -1,12 +1,9 @@
 @charset "UTF-8";
 /*--------- HEARDER ---------*/
-header .contenerdor {
+.navbar-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  align-items: center; }
+  margin: 0 auto; }
 
 .nombre {
   text-align: justify;
@@ -18,7 +15,7 @@ header .contenerdor {
 a:hover {
   color: white; }
 
-.colornav {
+.navbar {
   width: 100%;
   display: flex;
   list-style: none;
@@ -30,7 +27,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 45%;
+  width: 55%;
   flex-wrap: wrap; }
   .encabezado nav ul li a {
     color: white;
@@ -63,7 +60,7 @@ a:hover {
 .losDestacados h3 {
   display: flex;
   color: #3d3d3d;
-  margin-left: 30px;
+  margin-left: 44px;
   font-size: 25px;
   font-weight: bold;
   padding-top: 10px; }
@@ -77,7 +74,7 @@ a:hover {
   align-content: space-between; }
 
 .card {
-  margin: 3rem 2rem;
+  margin: 3rem 3rem;
   margin-bottom: 5px;
   padding: 10px;
   border: solid 1px white;
@@ -102,7 +99,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   color: #3d3d3d;
-  margin-left: 30px;
+  margin-left: 44px;
   font-size: 25px;
   font-weight: bold;
   margin-top: 50px; }
@@ -147,16 +144,20 @@ a:hover {
     margin-left: 20px;
     font-weight: bold;
     font-size: 25px; }
+  .eventos a, .nosotros a {
+    text-decoration: none; }
+    .eventos a :hover, .nosotros a :hover {
+      color: #3e6582; }
 
-.eventosDes0, .eventosDes, .eventosDes2, .eventosDes3 {
+.eventosDes0, .eventosDes, .eventosDes2, .eventosDes3, .eventosDes4 {
   display: flex;
   align-items: center; }
-  .eventosDes0 img, .eventosDes img, .eventosDes2 img, .eventosDes3 img {
+  .eventosDes0 img, .eventosDes img, .eventosDes2 img, .eventosDes3 img, .eventosDes4 img {
     padding-top: 30px;
     margin-left: 20px;
     margin-bottom: 30px;
     width: 120%; }
-  .eventosDes0 p, .eventosDes p, .eventosDes2 p, .eventosDes3 p {
+  .eventosDes0 p, .eventosDes p, .eventosDes2 p, .eventosDes3 p, .eventosDes4 p {
     margin: 20px;
     text-align: justify;
     font-size: medium; }
@@ -171,7 +172,7 @@ a:hover {
   padding-top: 30px;
   padding-bottom: 20px;
   margin-left: 20px;
-  width: 50%; }
+  width: 120%; }
 
 .eventosDes2 img {
   padding-top: 30px;
@@ -183,7 +184,13 @@ a:hover {
   padding-top: 30px;
   margin-left: 20px;
   margin-bottom: 30px;
-  width: 36%; }
+  width: 35%; }
+
+.eventosDes4 img {
+  padding-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  width: 43%; }
 
 /*--------- Página de contacto ---------*/
 .tituloContacto {
@@ -251,7 +258,8 @@ a:hover {
 .nosotros ul {
   list-style: none;
   color: #3d3d3d;
-  margin-left: -10px; }
+  margin-left: -10px;
+  padding-bottom: 30px; }
   .nosotros ul li a {
     text-decoration: none;
     display: block;
@@ -334,10 +342,11 @@ a:hover {
     grid-template-areas: "header" "titulo" "losDestacados" "pie";
     grid-template-rows: auto auto auto auto; }
   /*HEARDER */
-  .container {
+  .encabezado {
     grid-area: header;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     align-items: center; }
   .nombre {
@@ -347,9 +356,26 @@ a:hover {
     font-size: 23px;
     margin: 5px;
     padding-top: 10px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px; } }
+  @media (max-width: 576px) and (max-width: 270px) {
+    .nombre {
+      display: none; } }
+
+@media (max-width: 576px) {
   a:hover {
     color: white; }
+  .navbar-toggler {
+    display: flex;
+    border-color: transparent;
+    border: none;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    color: #fa7f9e; }
+    .navbar-toggler :hover {
+      background-color: #cf6983;
+      border-radius: 10%; }
+    .navbar-toggler img {
+      width: 70%; }
   .colornav {
     width: 100%;
     display: flex;
@@ -395,8 +421,13 @@ a:hover {
   .contenedor {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    overflow: hidden; }
   .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
     margin: 1rem 1rem;
     width: 50%; }
   .carousel {
@@ -426,7 +457,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* flex-wrap: wrap;   */
     align-items: center;
     background-color: #fae8bb;
     margin-bottom: 50px; }
@@ -434,47 +464,38 @@ a:hover {
       color: #3d3d3d;
       padding-top: 30px;
       text-align: center; }
-  .eventosDes0 img, .eventosDes img, .eventosDes2 img, .eventosDes3 img {
+  .teatro {
+    display: none; }
+  .eventosDes0 img, .eventosDes img, .eventosDes2 img, .eventosDes3 img, .eventosDes4 img {
     padding-top: 30px;
-    margin-left: 50px;
+    margin-left: 45px;
     margin-bottom: 10px;
     width: 80%; }
-  .eventosDes0 p, .eventosDes p, .eventosDes2 p, .eventosDes3 p {
-    margin: 15px;
-    text-align: justify;
-    font-size: 0%; }
+  .eventosDes0 p, .eventosDes p, .eventosDes2 p, .eventosDes3 p, .eventosDes4 p {
+    display: none; }
+  .eventosDes0 iframe, .eventosDes iframe, .eventosDes2 iframe, .eventosDes3 iframe, .eventosDes4 iframe {
+    display: none; }
   .eventosDes img {
     padding-top: 30px;
-    margin-left: 50px;
+    margin-left: 45px;
     margin-bottom: 10px;
     width: 80%; }
   .eventosDes p {
-    margin: 15px;
-    text-align: justify;
-    font-size: 0%; }
+    display: none; }
   .eventosDes2 img {
     padding-top: 30px;
-    margin-left: 50px;
+    margin-left: 45px;
     margin-bottom: 10px;
     width: 80%; }
   .eventosDes2 p {
-    margin: 15px;
-    text-align: justify;
-    font-size: 0%; }
-  .eventosDes2 iframe {
-    padding-top: 30px;
-    padding-bottom: 20px;
-    margin-left: 40px;
-    width: 100%; }
+    display: none; }
   .eventosDes3 img {
     padding-top: 30px;
-    margin-left: 50px;
+    margin-left: 45px;
     margin-bottom: 10px;
-    width: 100%; }
+    width: 80%; }
   .eventosDes3 p {
-    margin: 15px;
-    text-align: justify;
-    font-size: 0%; }
+    display: none; }
   /*FORMULARIO*/
   .formGrid {
     grid-area: formulario;

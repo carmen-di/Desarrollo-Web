@@ -22,7 +22,7 @@
 .losDestacados h3{
     display: flex;
     color: rgb(61, 61, 61);
-    margin-left: 30px; 
+    margin-left: 44px; 
     font-size: 25px;
     font-weight: bold;
     padding-top: 10px;
@@ -34,11 +34,11 @@
     column-gap: 1rem;
     row-gap: 1rem;
     align-items: stretch; 
-    align-content: space-between; 
+    align-content: space-between;    
 }
 
 .card {
-    margin: 3rem 2rem; 
+    margin: 3rem 3rem; 
     margin-bottom: 5px;
     padding: 10px;
     border: solid 1px white;
@@ -70,7 +70,7 @@
         display: flex;
         flex-direction: column;
         color: rgb(61, 61, 61);
-        margin-left: 30px; 
+        margin-left: 44px; 
         font-size: 25px;
         font-weight: bold;
         margin-top: 50px;
@@ -130,6 +130,13 @@
         font-weight: bold;
         font-size: 25px;
     }
+
+    a {
+        text-decoration: none;
+        & :hover {
+            color: #3e6582;
+        }
+    }
 }
 
 @mixin imagenes($padding-top, $margin-left, $margin-bottom, $widht) {
@@ -165,7 +172,7 @@
         padding-top: 30px;
         padding-bottom: 20px;
         margin-left: 20px;
-        width: 50%;
+        width: 120%;
     }    
 }
 
@@ -181,7 +188,15 @@
     @extend .eventosDes0;
 
     img {
-        @include imagenes(-top, -left, -bottom, 36%);
+        @include imagenes(-top, -left, -bottom, 35%);
+    } 
+}
+
+.eventosDes4 {
+    @extend .eventosDes0;
+
+    img {
+        @include imagenes(-top, -left, -bottom, 43%);
     } 
 }
 /*--------- Página de contacto ---------*/
@@ -268,6 +283,7 @@
         list-style: none;
         color: rgb(61, 61, 61);
         margin-left: -10px; 
+        padding-bottom: 30px;
         li a{
             text-decoration: none;
             display: block;

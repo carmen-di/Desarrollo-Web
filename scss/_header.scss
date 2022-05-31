@@ -6,13 +6,13 @@ $colorfont: (   //mapa de colores
     transicion: #cf6983
 );
 
-header .contenerdor {
+.navbar-nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
     margin: 0 auto;
-    align-items: center;
+    // align-items: center;
 }
 
 .nombre{
@@ -27,7 +27,7 @@ a:hover{
     color: map-get($colorfont, secciones);
 }
 
-.colornav {
+.navbar {
     width: 100%;
     display: flex;
     list-style: none;
@@ -40,9 +40,8 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 45%;
+    width: 55%;
     flex-wrap: wrap;
-
     li a {
         color: map-get($colorfont, secciones);
         display: block;

@@ -17,6 +17,8 @@
     }
     .losDestacados {
         grid-area: losDestacados; 
+        // margin: auto 0;
+        // width: 70%;
     }
     .piePagina {
         grid-area: pie;
@@ -52,28 +54,46 @@
     }
 
 /*HEARDER */
-    
-.container {
+.encabezado {
     grid-area: header;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     align-items: center;
-}
+} 
 
-.nombre{
+.nombre {
     display: flex;
     flex-direction: column;
     text-align: center;
     font-size: 23px; 
     margin: 5px;
     padding-top: 10px;
-    padding-bottom: 10px;
-}
-
+    padding-bottom: 10px; 
+    @media (max-width: 270px) {
+        display: none;
+    }
+} 
 
 a:hover{
     color: white;
+}
+
+.navbar-toggler {
+    display: flex;
+    border-color: transparent;
+    border: none;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    color: #fa7f9e;
+    & :hover {
+        background-color: #cf6983;
+        border-radius: 10%;
+    }  
+    img {
+        width: 70%;
+    }
 }
 
 .colornav {
@@ -97,7 +117,6 @@ a:hover{
         color: white;
     }  
 }
-
 
 /*MAIN*/
     .titulo {
@@ -138,10 +157,17 @@ a:hover{
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: hidden;
     }
+
     .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
         margin: 1rem 1rem;
         width: 50%;
+
     } 
 
     .carousel {
@@ -183,7 +209,6 @@ a:hover{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* flex-wrap: wrap;   */
         align-items: center;
         background-color: #fae8bb;
         margin-bottom: 50px;
@@ -195,9 +220,13 @@ a:hover{
         }
     } 
 
+    .teatro {
+        display: none;
+    }
+
     @mixin imagenes($padding-top, $margin-left, $margin-bottom, $widht) {
         padding-top: 30px;
-        margin-left: 50px;
+        margin-left: 45px;
         margin-bottom: 10px;
         width: $widht;
     }
@@ -208,10 +237,12 @@ a:hover{
         }
        
         p{
-            margin: 15px;
-            text-align: justify; 
-            font-size: 0%;
+            display: none;
         } 
+
+        iframe {
+            display: none;
+        }
     }
 
     .eventosDes{
@@ -219,9 +250,7 @@ a:hover{
             @include imagenes(-top, -left, -bottom, 80%);
         }
         p{
-            margin: 15px;
-            text-align: justify; 
-            font-size: 0%;
+            display: none;
         }    
     }
     
@@ -231,27 +260,16 @@ a:hover{
         }
     
         p{
-            margin: 15px;
-            text-align: justify; 
-            font-size: 0%;
+            display: none;
         } 
-
-        iframe {
-            padding-top: 30px;
-            padding-bottom: 20px;
-            margin-left: 40px;
-            width: 100%;
-        }
     }
 
     .eventosDes3 {
         img {
-            @include imagenes(-top, -left, -bottom, 100%);
+            @include imagenes(-top, -left, -bottom, 80%);
         } 
         p{
-            margin: 15px;
-            text-align: justify; 
-            font-size: 0%;
+            display: none;
         } 
     }
 
@@ -274,3 +292,5 @@ a:hover{
 
 
 }
+
+
