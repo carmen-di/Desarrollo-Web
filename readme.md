@@ -1,3 +1,3 @@
-# CoderHouse - Desarrollo Web
+# Desarrollo Web
 
-Pruebe mi sitio en el siguiente [link]( https://carmen-di.github.io/QueHayLp/) 
+<!-- Pruebe mi sitio en el siguiente [link](https://carmen-di.github.io/Desarrollo-Web/)  -->
